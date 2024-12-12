@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <h1>Formulario matriculación</h1>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label>Nombre:</label>
+            <br/>
+            <textarea name="nombre" placeholder="Escribe aquí tu nombre" minlength="2" maxlength="40" required></textarea>
+            <br/>
+            <label>Apellidos:</label>
+            <br/>
+            <textarea name="nombre" placeholder="Escribe aquí tu apellido" minlength="1" maxlength="100" required></textarea>
+            <br/>
+            <label>Correo electrónico:</label>
+            <input type="email" name="correo" required/>
+            <br/>
+            <label>Teléfono:</label>
+            <input type="tel" name="telefono" required/>
+            <br/>
+            <label>Fecha de nacimiento</label>
+            <input type="date" name="fechaHora" required/>
+            <br/>
+            <label>Talla de uniforme</label>
+            <br/>
+            <label>S
+                <input type="radio" name="elegir"/>
+            </label>
+            <label>M
+                <input type="radio" name="elegir"/>
+            </label>
+            <label>L
+                <input type="radio" name="elegir"/>
+            </label>
+            <label>XL
+                <input type="radio" name="elegir"/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Datos académicos</legend>
+            <label>Grado</label>
+            <select>
+                <option value="opcion_1">Grado Medio en SMR</option>
+                <option value="opcion_2">Grado Superior en SMR</option>
+                <option value="opcion_3">Grado Medio en DAM</option>
+                <option value="opcion_4">Grado Superior en DAM</option>
+                <option value="opcion_5">Grado Medio en DAW</option>
+                <option value="opcion_6">Grado Superior en DAW</option>
+            </select>
+            <br/>
+            <label>Curso</label>
+            <label>1º
+            <input type="radio" name="elegir"/>
+            </label>
+            <label>2º
+                <input type="radio" name="elegir"/>
+            </label>
+            </br>
+            <legend>Subir archivo</legend>
+            <label>Titulación:</label>
+            <input type="file" name="archivo" accept=".pdf,.png" />
+            <br>
+            <input type="submit" value="Enviar">
+            <br>
+            <label>Información adicional:</label>
+            <br/>
+            <textarea name="informacion" placeholder="Escribe aquí la información relevante" minlength="2" maxlength="100" required></textarea>
+            <br/>
+        </fieldset>
+    </form>
+</body>
+</html>

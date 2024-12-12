@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Copimsa</title>
+    <style>
+        .uno{
+            color: rgb(237, 79, 17);
+        }
+        .dos{
+            color: rgb(1, 14, 1);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center">VIAJES COPIMSA</h1>
+    <h3>Viaje a Madrid</h3>
+    <form>
+        <fieldset>
+        <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzkK1L0ycxrHh1u_ERr02q_mdXEqHHix10jg&s" 
+                 alt="Logo ITP" 
+                 width="100px" 
+                 height="auto">
+        </figure>
+        <p>
+            Madrid es un municipio y una ciudad de España. La localidad, con categoría histórica de villa, ​es<br>
+            la capital del Estado​ y de la Comunidad de Madrid. En su término municipal, el más poblado de España.
+        </p>
+        </fieldset>
+    </form>
+    <br>
+    <h3>Imágenes de la ciudad</h3>
+    <form>
+        <fieldset>
+        <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq3Hor7r4qUAqiazi5QaoTEeQ1jOGWUNV8mQ&s" 
+                 alt="Logo ITP" 
+                 width="100px" 
+                 height="auto">
+            <figcaption>Puerta del Sol</figcaption>
+        </figure>
+        <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo8g-ojhX6B8TJsCTk-bWZ1DCRBK8kYO1RmA&s" 
+                alt="Logo ITP" 
+                width="100px" 
+                height="auto">
+                <figcaption>Cibeles</figcaption>
+        </figure>
+        </fieldset>
+    </form>
+        <br>
+    <h3>Actividades en la ciudad</h3>
+    <form>
+        <fieldset>
+            <p>
+                Madrid ofrece muchas opciones culturales y de entretenimiento<br>
+                aquí tenemos una lista para que no te pierdas nada y te diviertas.
+            </p>
+            <index class="titulo">¿Qué hacer en Madrid?</index>
+            <ol class="uno">
+                <li class="uno">Sitios emblemáticos</li>
+                <ol class="dos" type="a">
+                    <li>Paseo de Gran Vía</li>
+                    <li>Parque del Retiro</li>
+                    <li class="dos">La Puerta del Sol</li>
+                    <li class="dos">El tempo de Deboth</li>
+                </ol>
+                <li class="uno">Actividades culturales</li>
+                <ol class="dos" type="a">
+                    <li>Teatro de Gran vía</li>
+                    <li>Cines "La Antigua"</li>
+                    <li class="dos">Paseo de la moda</li>
+                    <li class="dos">Museo del Prado</li>
+                </ol>
+                <li class="uno">Tiendas y restaurantes</li>
+                <ol class="dos" type="a">
+                    <li>Restaurante Michelin</li>
+                    <li>Primark Gran Vía</li>
+                    <li class="dos">Galerías Preciados</li>
+                    <li class="dos">Cafetería Palacio</li>
+                </ol>
+            </ol>
+        </fieldset>
+    </form>
+    <h3>Tabla de precios</h3>
+    <form>
+        <fieldset>
+                <table border="2">
+                    <thead colspan="2">
+                        <td style="background-color: red; text-align: center;">Adulto</td>
+                        <td style="background-color: rgb(183, 255, 0); text-align: center;">Niño</td>
+                        <td style="background-color: rgb(87, 87, 185); text-align: center;">Jubilados</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>50€</th><th>20€</th><th>15€</th>
+                        </tr>
+                    </tbody>
+                </table>
+        </fieldset>
+    </form>
+    <h3>¡Haz tu reserva!</h3>
+    <form>
+        <fieldset>
+            <label>Nombre:</label>
+            <br/>
+            <textarea name="nombre" placeholder="Escribe aquí tu nombre" minlength="2" maxlength="40" required></textarea>
+            <br/>
+            <label>Correo electrónico:</label>
+            <input type="email" name="correo" required/>
+            <br/>
+            <label>Teléfono:</label>
+            <input type="tel" name="telefono" required/>
+            <br/>
+            <label>Acepta los términos y condiciones</label>
+            <br/>
+            <label>
+                <input type="radio" name="elegir"/>
+            </label>
+            <br/>
+            <label>Selecciona quien va a hacer el viaje</label>
+            <br/>
+            <label>Adulto
+                <input type="radio" name="elegir"/>
+            </label>
+            <label>Niño
+                <input type="radio" name="elegir"/>
+            </label>
+            <label>Jubilado
+                <input type="radio" name="elegir"/>
+            </label>
+            <br>
+            <input type="submit" value="Enviar">
+            <br>
+        </fieldset>
+    </form>
+
+
+        
+
+</body>
+</html>

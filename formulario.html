@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <form>
+        <fieldset>
+            <legend>Primera parte</legend>
+            <label>Nombre:</label>
+            <br/>
+            <textarea name="nombre" placeholder="Escriba aquí su nombre" minlength="10" maxlength="30" required></textarea>
+            <br/>
+            <label>Número de teléfono:</label>
+            <input type="tel" name="telefono" required/>
+            <br/>
+            <label>Correo electrónico:</label>
+            <input type="email" name="correo" required/>
+            <br/>
+            <label>Edad:</label>
+            <input type="number" name="edad" required/>
+            <br/>
+            <label>Contraseña:</label>
+            <input type="password" name="contraseña" required/>
+            <br/>
+            <label>fecha y hora</label>
+            <input type="date" name="fechaHora" required/>
+            <br/>
+            <label>Fecha y hora: </label>
+            <input type="date" name="fecha" required/>
+            <input type="time" name="hora" required/>
+            <input type="datetime-local" name="fecha_y_hora"/>
+            <br/>
+            <button type="submit" name="boton">Enviar</button>
+            <button type="reset">Borrar datos</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Segunda parte</legend>
+            <label>Elige una opción:</label>
+            <select name="opcion">
+                <option value="opcion_1">Opción 1</option>
+                <option value="opcion_2">Opción 2</option>
+                <option value="opcion_3">Opción 3</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tercera parte:</legend>
+            
+            <label>Selección de rango deslizante:</label>
+            <input type="range" name="rango" min="0" max="100" step="10" value="10"/>
+            <br/>
+            
+            <label>Barras de progreso:</label>
+            <progress></progress>
+            <progress max="100" min="0" value="75"></progress>
+            <br/>
+            
+            <label>Medidores:</label>
+            <meter min="0" max="10" value="3" low="5" high="7" optimum="9"></meter>
+            <meter min="0" max="10" value="6" low="5" high="7" optimum="9"></meter>
+            <meter min="0" max="10" value="8" low="5" high="7" optimum="9"></meter>
+
+
+        <br/>
+        <label>Elegir una o varias opcicones</label>
+        <label>opcion 1
+            <input type="checkbox" name="elegir"/>
+        </label>
+        <label>opcion 2
+            <input type="checkbox" name="elegir"/>
+        </label>
+        <label>opcion 3
+            <input type="checkbox" name="elegir"/>
+        </label>
+        <br/>
+        <label>Elegir solo una opcicon</label>
+        <label>opcion 1
+            <input type="radio" name="elegir"/>
+        </label>
+        <label>opcion 2
+            <input type="radio" name="elegir"/>
+        </label>
+        <label>opcion 3
+            <input type="radio" name="elegir"/>
+        </label>
+        </fieldset>
+    </form>
+</body>
+</html>
